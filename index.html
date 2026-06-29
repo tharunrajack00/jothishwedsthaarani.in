@@ -58,67 +58,263 @@
       <div class="env-scene">
         <div class="env-wrapper">
 
-          <!-- Reveal wrap: card starts hidden above, exits below the envelope -->
           <div class="env-reveal-wrap">
 
             <!-- Envelope -->
             <div class="envelope" id="envelope">
 
-              <!-- Envelope body -->
+              <!-- Body -->
               <div class="env-base" id="envBase">
+
+                <!-- Botanical right-side decoration -->
+                <svg class="env-botanical" viewBox="0 0 160 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <!-- main stem -->
+                  <path d="M80 260 C78 210 82 180 75 140 C68 100 70 70 80 20" stroke="#C8B08A" stroke-width="1.2" stroke-linecap="round"/>
+                  <!-- left branch 1 -->
+                  <path d="M75 200 C55 185 35 182 18 188" stroke="#C8B08A" stroke-width="1" stroke-linecap="round"/>
+                  <ellipse cx="18" cy="188" rx="11" ry="6" transform="rotate(-15 18 188)" fill="#C8B08A" opacity="0.5"/>
+                  <!-- right branch 1 -->
+                  <path d="M78 170 C98 155 118 152 136 158" stroke="#C8B08A" stroke-width="1" stroke-linecap="round"/>
+                  <ellipse cx="136" cy="158" rx="12" ry="6" transform="rotate(10 136 158)" fill="#C8B08A" opacity="0.5"/>
+                  <!-- left branch 2 -->
+                  <path d="M72 140 C50 128 32 128 15 136" stroke="#C8B08A" stroke-width="1" stroke-linecap="round"/>
+                  <ellipse cx="14" cy="136" rx="11" ry="5.5" transform="rotate(-20 14 136)" fill="#C8B08A" opacity="0.45"/>
+                  <!-- right branch 2 -->
+                  <path d="M76 110 C95 98 115 96 132 102" stroke="#C8B08A" stroke-width="1" stroke-linecap="round"/>
+                  <ellipse cx="132" cy="102" rx="12" ry="5.5" transform="rotate(12 132 102)" fill="#C8B08A" opacity="0.45"/>
+                  <!-- bud top -->
+                  <ellipse cx="80" cy="22" rx="6" ry="10" fill="#C8B08A" opacity="0.55"/>
+                  <ellipse cx="80" cy="15" rx="4" ry="7" fill="#C8B08A" opacity="0.4"/>
+                  <!-- small side buds -->
+                  <path d="M73 80 C62 72 55 70 48 74" stroke="#C8B08A" stroke-width="0.8" stroke-linecap="round"/>
+                  <ellipse cx="46" cy="74" rx="8" ry="4" transform="rotate(-25 46 74)" fill="#C8B08A" opacity="0.4"/>
+                  <path d="M79 56 C92 48 102 47 110 52" stroke="#C8B08A" stroke-width="0.8" stroke-linecap="round"/>
+                  <ellipse cx="111" cy="52" rx="8" ry="4" transform="rotate(15 111 52)" fill="#C8B08A" opacity="0.4"/>
+                </svg>
 
                 <!-- Address -->
                 <div class="env-address">
                   <p class="env-to">To,</p>
                   <p class="env-guest">Our Beloved Guests</p>
+                  <div class="env-addr-orn">
+                    <span></span>
+                    <svg viewBox="0 0 10 10" width="8" height="8" fill="#B8971F"><polygon points="5,0 6,4 10,5 6,6 5,10 4,6 0,5 4,4"/></svg>
+                    <span></span>
+                  </div>
                 </div>
 
               </div><!-- /env-base -->
 
-              <!-- Triangular flap — rotates open on seal click -->
+              <!-- Flap -->
               <div class="env-flap-wrap" id="envFlapWrap">
                 <div class="env-flap"></div>
               </div>
 
-              <!-- Wax seal — click target, floats above flap -->
+              <!-- Wax seal — laurel wreath design -->
               <div class="env-seal" id="envSeal" role="button" tabindex="0" aria-label="Tap the seal to open your invitation">
-                <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="40" cy="40" r="36" fill="#7B1E3A"/>
-                  <circle cx="40" cy="40" r="31" fill="none" stroke="#D4AF37" stroke-width="1.5"/>
-                  <circle cx="40" cy="40" r="24" fill="none" stroke="#D4AF37" stroke-width="0.8" stroke-dasharray="2.5 2"/>
-                  <text x="40" y="44" text-anchor="middle" font-size="11" fill="#D4AF37" font-family="serif" font-style="italic">J &amp; T</text>
-                  <path d="M40 4Q43 10 40 14Q37 10 40 4Z" fill="#D4AF37" opacity="0.6"/>
-                  <path d="M40 66Q43 72 40 76Q37 72 40 66Z" fill="#D4AF37" opacity="0.6"/>
-                  <path d="M4 40Q10 37 14 40Q10 43 4 40Z" fill="#D4AF37" opacity="0.6"/>
-                  <path d="M66 40Q72 37 76 40Q72 43 66 40Z" fill="#D4AF37" opacity="0.6"/>
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Outer metallic ring -->
+                  <circle cx="50" cy="50" r="48" fill="url(#sealRing)"/>
+                  <!-- Wax body -->
+                  <circle cx="50" cy="50" r="43" fill="url(#sealWax)"/>
+                  <!-- Inner ring -->
+                  <circle cx="50" cy="50" r="38" fill="none" stroke="#B8971F" stroke-width="0.8"/>
+                  <!-- Laurel left -->
+                  <g fill="#D4AF37" opacity="0.9">
+                    <ellipse cx="22" cy="45" rx="5" ry="2.5" transform="rotate(-40 22 45)"/>
+                    <ellipse cx="18" cy="52" rx="5" ry="2.5" transform="rotate(-55 18 52)"/>
+                    <ellipse cx="17" cy="60" rx="5" ry="2.5" transform="rotate(-70 17 60)"/>
+                    <ellipse cx="20" cy="68" rx="4.5" ry="2" transform="rotate(-80 20 68)"/>
+                    <ellipse cx="26" cy="37" rx="4.5" ry="2" transform="rotate(-25 26 37)"/>
+                    <ellipse cx="32" cy="30" rx="4" ry="1.8" transform="rotate(-10 32 30)"/>
+                  </g>
+                  <!-- Laurel stem left -->
+                  <path d="M34 28 C28 38 18 52 22 72" stroke="#D4AF37" stroke-width="0.9" fill="none" opacity="0.7"/>
+                  <!-- Laurel right -->
+                  <g fill="#D4AF37" opacity="0.9">
+                    <ellipse cx="78" cy="45" rx="5" ry="2.5" transform="rotate(40 78 45)"/>
+                    <ellipse cx="82" cy="52" rx="5" ry="2.5" transform="rotate(55 82 52)"/>
+                    <ellipse cx="83" cy="60" rx="5" ry="2.5" transform="rotate(70 83 60)"/>
+                    <ellipse cx="80" cy="68" rx="4.5" ry="2" transform="rotate(80 80 68)"/>
+                    <ellipse cx="74" cy="37" rx="4.5" ry="2" transform="rotate(25 74 37)"/>
+                    <ellipse cx="68" cy="30" rx="4" ry="1.8" transform="rotate(10 68 30)"/>
+                  </g>
+                  <!-- Laurel stem right -->
+                  <path d="M66 28 C72 38 82 52 78 72" stroke="#D4AF37" stroke-width="0.9" fill="none" opacity="0.7"/>
+                  <!-- Small top ornament -->
+                  <path d="M50 16 C52 20 50 23 48 20 C50 17 50 16 50 16Z" fill="#D4AF37" opacity="0.7"/>
+                  <!-- Bottom bow/ribbon -->
+                  <path d="M38 75 Q50 80 62 75" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.8"/>
+                  <!-- Monogram text -->
+                  <text x="50" y="55" text-anchor="middle" font-size="14" fill="#D4AF37" font-family="Georgia,serif" font-style="italic" letter-spacing="1">J&amp;T</text>
+                  <!-- Gradients -->
+                  <defs>
+                    <radialGradient id="sealRing" cx="40%" cy="35%">
+                      <stop offset="0%" stop-color="#C8972A"/>
+                      <stop offset="50%" stop-color="#8B6914"/>
+                      <stop offset="100%" stop-color="#5A4410"/>
+                    </radialGradient>
+                    <radialGradient id="sealWax" cx="38%" cy="32%">
+                      <stop offset="0%" stop-color="#9B2E4A"/>
+                      <stop offset="55%" stop-color="#7B1E3A"/>
+                      <stop offset="100%" stop-color="#4a0e1e"/>
+                    </radialGradient>
+                  </defs>
                 </svg>
               </div>
 
             </div><!-- /envelope -->
 
-            <!-- Invitation card — slides down from inside the envelope -->
+            <!-- Invitation card -->
             <div class="env-card" id="envCard">
-              <div class="card-deco-border"></div>
-              <p class="card-intro">With great joy and blessings, we invite you<br>to celebrate the wedding of</p>
-              <h2 class="card-names">
-                <span class="card-bride">S Jothishwar</span>
-                <span class="card-amp">&amp;</span>
-                <span class="card-groom">C K Thaaranidevi</span>
-              </h2>
-              <div class="card-orn">
-                <span class="card-orn-line"></span>
-                <svg viewBox="0 0 20 20" width="14" height="14" fill="#D4AF37"><path d="M10 1l2.4 6.8H20l-5.9 4.3 2.3 6.9L10 15 3.6 19l2.3-6.9L0 7.8h7.6z"/></svg>
-                <span class="card-orn-line"></span>
+              <!-- Corner flowers -->
+              <div class="card-flower card-flower-tr" aria-hidden="true">
+                <svg viewBox="0 0 120 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.92">
+                    <!-- petals -->
+                    <ellipse cx="60" cy="55" rx="14" ry="28" fill="#7B1E3A"/>
+                    <ellipse cx="60" cy="55" rx="14" ry="28" transform="rotate(45 60 55)" fill="#9B2E4A"/>
+                    <ellipse cx="60" cy="55" rx="14" ry="28" transform="rotate(90 60 55)" fill="#7B1E3A"/>
+                    <ellipse cx="60" cy="55" rx="14" ry="28" transform="rotate(135 60 55)" fill="#9B2E4A"/>
+                    <circle cx="60" cy="55" r="10" fill="#C0392B"/>
+                    <circle cx="60" cy="55" r="6" fill="#E8C84A"/>
+                    <!-- small stamens -->
+                    <circle cx="57" cy="51" r="1.2" fill="#D4AF37"/>
+                    <circle cx="63" cy="51" r="1.2" fill="#D4AF37"/>
+                    <circle cx="60" cy="48" r="1.2" fill="#D4AF37"/>
+                    <!-- leaves -->
+                    <path d="M72 75 C85 68 100 72 110 65" stroke="#5a7a3a" stroke-width="1.5" fill="none"/>
+                    <ellipse cx="95" cy="67" rx="12" ry="5" transform="rotate(-15 95 67)" fill="#4a6830" opacity="0.7"/>
+                    <path d="M55 80 C48 95 38 100 25 110" stroke="#5a7a3a" stroke-width="1.2" fill="none"/>
+                    <!-- gold leaves -->
+                    <path d="M78 40 C88 30 105 28 115 18" stroke="#C8972A" stroke-width="1" fill="none"/>
+                    <ellipse cx="105" cy="28" rx="10" ry="4" transform="rotate(-25 105 28)" fill="#C8972A" opacity="0.6"/>
+                    <ellipse cx="115" cy="18" rx="8" ry="3.5" transform="rotate(-35 115 18)" fill="#C8972A" opacity="0.5"/>
+                    <path d="M65 32 C70 18 80 10 88 2" stroke="#C8972A" stroke-width="1" fill="none"/>
+                    <ellipse cx="82" cy="10" rx="8" ry="3.5" transform="rotate(-55 82 10)" fill="#C8972A" opacity="0.5"/>
+                  </g>
+                </svg>
               </div>
-              <p class="card-date">September 6 &amp; 7, 2026</p>
-              <p class="card-venue">KRK Meenakshi Mahal &middot; Pacharpalayam</p>
-              <button class="card-enter-btn" id="cardEnterBtn">View Invitation</button>
+              <div class="card-flower card-flower-bl" aria-hidden="true">
+                <svg viewBox="0 0 130 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.92">
+                    <ellipse cx="55" cy="75" rx="15" ry="30" fill="#7B1E3A"/>
+                    <ellipse cx="55" cy="75" rx="15" ry="30" transform="rotate(45 55 75)" fill="#9B2E4A"/>
+                    <ellipse cx="55" cy="75" rx="15" ry="30" transform="rotate(90 55 75)" fill="#7B1E3A"/>
+                    <ellipse cx="55" cy="75" rx="15" ry="30" transform="rotate(135 55 75)" fill="#9B2E4A"/>
+                    <circle cx="55" cy="75" r="11" fill="#C0392B"/>
+                    <circle cx="55" cy="75" r="6" fill="#E8C84A"/>
+                    <circle cx="52" cy="72" r="1.2" fill="#D4AF37"/>
+                    <circle cx="58" cy="72" r="1.2" fill="#D4AF37"/>
+                    <circle cx="55" cy="69" r="1.2" fill="#D4AF37"/>
+                    <!-- smaller bud -->
+                    <ellipse cx="22" cy="45" rx="9" ry="18" fill="#9B2E4A" opacity="0.8"/>
+                    <ellipse cx="22" cy="45" rx="9" ry="18" transform="rotate(90 22 45)" fill="#7B1E3A" opacity="0.7"/>
+                    <circle cx="22" cy="45" r="6" fill="#C0392B" opacity="0.8"/>
+                    <!-- gold stems/leaves -->
+                    <path d="M30 40 C18 28 8 20 2 8" stroke="#C8972A" stroke-width="1.1" fill="none"/>
+                    <ellipse cx="12" cy="22" rx="9" ry="3.5" transform="rotate(55 12 22)" fill="#C8972A" opacity="0.55"/>
+                    <path d="M40 90 C28 108 18 118 8 130" stroke="#C8972A" stroke-width="1" fill="none"/>
+                    <ellipse cx="20" cy="115" rx="9" ry="3.5" transform="rotate(-55 20 115)" fill="#C8972A" opacity="0.5"/>
+                    <path d="M75 85 C92 82 108 88 120 82" stroke="#4a6830" stroke-width="1.2" fill="none"/>
+                    <ellipse cx="108" cy="84" rx="11" ry="4.5" transform="rotate(10 108 84)" fill="#4a6830" opacity="0.65"/>
+                  </g>
+                </svg>
+              </div>
+              <!-- Gold leaf corners -->
+              <div class="card-corner card-corner-tl" aria-hidden="true">
+                <svg viewBox="0 0 50 50" fill="none"><path d="M2 48 L2 2 L48 2" stroke="#C8972A" stroke-width="1.2" fill="none" opacity="0.6"/><path d="M2 2 C12 8 20 18 14 30" stroke="#C8972A" stroke-width="0.8" fill="none" opacity="0.5"/><ellipse cx="14" cy="30" rx="5" ry="2.5" transform="rotate(40 14 30)" fill="#C8972A" opacity="0.4"/></svg>
+              </div>
+              <div class="card-corner card-corner-tr" aria-hidden="true">
+                <svg viewBox="0 0 50 50" fill="none"><path d="M48 48 L48 2 L2 2" stroke="#C8972A" stroke-width="1.2" fill="none" opacity="0.6"/><path d="M48 2 C38 8 30 18 36 30" stroke="#C8972A" stroke-width="0.8" fill="none" opacity="0.5"/><ellipse cx="36" cy="30" rx="5" ry="2.5" transform="rotate(-40 36 30)" fill="#C8972A" opacity="0.4"/></svg>
+              </div>
+              <div class="card-corner card-corner-bl" aria-hidden="true">
+                <svg viewBox="0 0 50 50" fill="none"><path d="M2 2 L2 48 L48 48" stroke="#C8972A" stroke-width="1.2" fill="none" opacity="0.6"/></svg>
+              </div>
+              <div class="card-corner card-corner-br" aria-hidden="true">
+                <svg viewBox="0 0 50 50" fill="none"><path d="M48 2 L48 48 L2 48" stroke="#C8972A" stroke-width="1.2" fill="none" opacity="0.6"/></svg>
+              </div>
+              <!-- Outer + inner gold border lines -->
+              <div class="card-border-outer"></div>
+              <div class="card-border-inner"></div>
+              <!-- Monogram wreath -->
+              <div class="card-monogram">
+                <svg viewBox="0 0 110 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- wreath circle -->
+                  <circle cx="55" cy="44" r="30" fill="none" stroke="#C8972A" stroke-width="1"/>
+                  <!-- left laurel -->
+                  <g fill="#C8972A" opacity="0.85">
+                    <ellipse cx="27" cy="38" rx="5" ry="2.2" transform="rotate(-35 27 38)"/>
+                    <ellipse cx="24" cy="45" rx="5" ry="2.2" transform="rotate(-50 24 45)"/>
+                    <ellipse cx="25" cy="53" rx="4.5" ry="2" transform="rotate(-65 25 53)"/>
+                    <ellipse cx="31" cy="31" rx="4" ry="1.8" transform="rotate(-20 31 31)"/>
+                  </g>
+                  <path d="M33 28 C26 38 22 50 26 62" stroke="#C8972A" stroke-width="0.8" fill="none" opacity="0.65"/>
+                  <!-- right laurel -->
+                  <g fill="#C8972A" opacity="0.85">
+                    <ellipse cx="83" cy="38" rx="5" ry="2.2" transform="rotate(35 83 38)"/>
+                    <ellipse cx="86" cy="45" rx="5" ry="2.2" transform="rotate(50 86 45)"/>
+                    <ellipse cx="85" cy="53" rx="4.5" ry="2" transform="rotate(65 85 53)"/>
+                    <ellipse cx="79" cy="31" rx="4" ry="1.8" transform="rotate(20 79 31)"/>
+                  </g>
+                  <path d="M77 28 C84 38 88 50 84 62" stroke="#C8972A" stroke-width="0.8" fill="none" opacity="0.65"/>
+                  <!-- bottom bow -->
+                  <path d="M42 74 Q55 80 68 74" stroke="#C8972A" stroke-width="1" fill="none" opacity="0.75"/>
+                  <!-- small hearts at bottom -->
+                  <path d="M55 78 C54 76 52 75 52 77 C52 79 55 81 55 81 C55 81 58 79 58 77 C58 75 56 76 55 78Z" fill="#C8972A" opacity="0.6"/>
+                  <!-- monogram -->
+                  <text x="55" y="50" text-anchor="middle" font-size="18" fill="#7B1E3A" font-family="Georgia,serif" font-style="italic">J&amp;T</text>
+                </svg>
+              </div>
+              <p class="card-intro">With great joy and blessings,<br>we invite you to celebrate the wedding of</p>
+              <div class="card-divider-sm">
+                <span></span><span class="card-divider-dot">·♥·</span><span></span>
+              </div>
+              <h2 class="card-names">
+                <span class="card-name-top">S Jothishwar</span>
+                <div class="card-amp-row">
+                  <span class="card-amp-swirl">〜</span>
+                  <span class="card-amp">&amp;</span>
+                  <span class="card-amp-swirl">〜</span>
+                </div>
+                <span class="card-name-bottom">C K Thaaranidevi</span>
+              </h2>
+              <div class="card-divider-sm">
+                <span></span><span class="card-divider-dot">·♥·</span><span></span>
+              </div>
+              <p class="card-date">
+                <svg viewBox="0 0 18 18" width="14" height="14" fill="none" stroke="#7B1E3A" stroke-width="1.4" style="vertical-align:middle;margin-right:5px"><rect x="2" y="3" width="14" height="13" rx="2"/><line x1="6" y1="1" x2="6" y2="5"/><line x1="12" y1="1" x2="12" y2="5"/><line x1="2" y1="7" x2="16" y2="7"/></svg>
+                September 6 &amp; 7, 2026
+              </p>
+              <p class="card-venue">
+                <svg viewBox="0 0 16 20" width="12" height="14" fill="none" stroke="#7B1E3A" stroke-width="1.4" style="vertical-align:middle;margin-right:5px"><path d="M8 1C4.69 1 2 3.69 2 7c0 4.75 6 12 6 12s6-7.25 6-12c0-3.31-2.69-6-6-6z"/><circle cx="8" cy="7" r="2"/></svg>
+                KRK Meenakshi Mahal &middot; Pacharpalayam
+              </p>
+              <button class="card-enter-btn" id="cardEnterBtn">View Invitation &nbsp;♥</button>
             </div><!-- /env-card -->
 
           </div><!-- /env-reveal-wrap -->
 
           <!-- Hint -->
-          <p class="env-hint" id="envHint">Tap the seal to open</p>
+          <div class="env-hint-wrap" id="envHint">
+            <div class="env-hint-orn">
+              <span></span>
+              <svg viewBox="0 0 40 20" width="40" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 10 L10 4 L20 10 L30 4 L38 10" stroke="#D4AF37" stroke-width="0.8" opacity="0.6" fill="none"/>
+                <circle cx="20" cy="10" r="2" fill="#D4AF37" opacity="0.7"/>
+              </svg>
+              <span></span>
+            </div>
+            <p class="env-hint">Tap the seal to open</p>
+            <div class="env-hint-orn">
+              <span></span>
+              <svg viewBox="0 0 40 20" width="40" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 10 L10 16 L20 10 L30 16 L38 10" stroke="#D4AF37" stroke-width="0.8" opacity="0.6" fill="none"/>
+                <circle cx="20" cy="10" r="2" fill="#D4AF37" opacity="0.7"/>
+              </svg>
+              <span></span>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -181,53 +377,6 @@
           <div class="count-card glass-card" id="seconds-card">
             <div class="count-num" id="seconds">00</div>
             <div class="count-label">Seconds</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== COUPLE SECTION ===== -->
-    <section id="couple" class="couple-section">
-      <div class="container">
-        <div class="section-label">The Couple</div>
-        <h2 class="section-title script-font">Two Souls, One Destiny</h2>
-        <div class="couple-grid">
-          <div class="couple-card reveal-left glass-card">
-            <div class="couple-frame">
-              <div class="couple-img-wrap groom-img">
-                <div class="couple-img-placeholder">
-                  <svg viewBox="0 0 100 120" fill="none"><ellipse cx="50" cy="35" rx="20" ry="24" fill="#D4AF37" opacity="0.4"/><path d="M15 110 Q50 78 85 110" fill="#D4AF37" opacity="0.3"/><text x="50" y="38" text-anchor="middle" font-size="10" fill="#7B1E3A" font-family="serif">Groom</text></svg>
-                </div>
-              </div>
-              <div class="couple-frame-deco"></div>
-            </div>
-            <div class="couple-info">
-              <h3 class="couple-name script-font">S Jothishwar</h3>
-              <p class="couple-role">The Groom</p>
-              <div class="couple-divider">✦</div>
-              <p class="couple-desc">Strong, caring, and endlessly devoted — he leads with both his heart and integrity. His laughter, dedication, and unwavering love make every moment feel like home.</p>
-            </div>
-          </div>
-          <div class="couple-center-deco">
-            <div class="center-ring">
-              <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="35" stroke="#D4AF37" stroke-width="1" stroke-dasharray="4 4"/><text x="40" y="45" text-anchor="middle" font-size="18" fill="#D4AF37" font-family="serif">&amp;</text></svg>
-            </div>
-          </div>
-          <div class="couple-card reveal-right glass-card">
-            <div class="couple-frame">
-              <div class="couple-img-wrap bride-img">
-                <div class="couple-img-placeholder">
-                  <svg viewBox="0 0 100 120" fill="none"><ellipse cx="50" cy="35" rx="22" ry="25" fill="#F8D7DA" opacity="0.8"/><path d="M10 110 Q50 75 90 110" fill="#F8D7DA" opacity="0.6"/><text x="50" y="38" text-anchor="middle" font-size="10" fill="#7B1E3A" font-family="serif">Bride</text></svg>
-                </div>
-              </div>
-              <div class="couple-frame-deco"></div>
-            </div>
-            <div class="couple-info">
-              <h3 class="couple-name script-font">C K Thaaranidevi</h3>
-              <p class="couple-role">The Bride</p>
-              <div class="couple-divider">✦</div>
-              <p class="couple-desc">Graceful, radiant, and full of warmth — she lights up every room she enters. Her kindness and beauty are matched only by the depth of her love for family and life.</p>
-            </div>
           </div>
         </div>
       </div>
@@ -395,35 +544,15 @@
       <div class="container">
         <div class="section-label">Two Families, One Bond</div>
         <h2 class="section-title script-font">Our Families</h2>
-        <div class="family-grid">
-          <div class="family-card reveal-left glass-card">
-            <div class="family-header">
-              <div class="family-icon">🌼</div>
-              <h3>Groom's Family</h3>
-            </div>
-            <p class="family-desc">With heartfelt joy and gratitude, the family of <strong>S Jothishwar</strong> invites you to be a part of this auspicious and blessed occasion.</p>
-            <ul class="family-list">
-              <li><span class="family-role">Father of the Groom</span><span class="family-sep">:</span><span class="family-value">S Selvaraj</span></li>
-              <li><span class="family-role">Mother of the Groom</span><span class="family-sep">:</span><span class="family-value">V Gomathi</span></li>
-              <li><span class="family-role">Brother of the Groom</span><span class="family-sep">:</span><span class="family-value">S Mugesh</span></li>
-            </ul>
-          </div>
-          <div class="family-center-deco">
-            <div class="family-heart">
-              <svg viewBox="0 0 60 60" fill="none"><path d="M30 50 L8 28C3 23 3 14 8 9c5-5 13-5 18 0l4 4 4-4c5-5 13-5 18 0 5 5 5 14 0 19L30 50z" fill="#D4AF37" opacity="0.3" stroke="#D4AF37" stroke-width="1"/></svg>
-            </div>
-          </div>
-          <div class="family-card reveal-right glass-card">
-            <div class="family-header">
-              <div class="family-icon">🌸</div>
-              <h3>Bride's Family</h3>
-            </div>
-            <p class="family-desc">With boundless love and blessings, the family of <strong>C K Thaaranidevi</strong> warmly welcomes you to join in celebrating this joyous union.</p>
-            <ul class="family-list">
-              <li><span class="family-role">Father of the Bride</span><span class="family-sep">:</span><span class="family-value">C Kanagaraj</span></li>
-              <li><span class="family-role">Mother of the Bride</span><span class="family-sep">:</span><span class="family-value">K Sumalatha</span></li>
-              <li><span class="family-role">Brother of the Bride</span><span class="family-sep">:</span><span class="family-value">C K Tharunraja</span></li>
-            </ul>
+        <div class="family-invite-wrap reveal-up">
+          <div class="family-invite-card glass-card">
+            <div class="family-invite-icon">🌸</div>
+            <p class="family-invite-text">
+              Together, the families of <strong>Jothish</strong> and <strong>Thaarani</strong><br>
+              joyfully invite you to share in the blessings of this auspicious union.<br><br>
+              Your presence would be the greatest gift to us all.
+            </p>
+            <div class="family-invite-icon">🌼</div>
           </div>
         </div>
       </div>
@@ -434,11 +563,10 @@
   <footer class="footer">
     <div class="footer-deco-top"></div>
     <div class="footer-content">
-      <h2 class="footer-names script-font">S Jothishwar &amp; C K Thaaranidevi</h2>
+      <h2 class="footer-names script-font">Jothish &amp; Thaarani</h2>
       <p class="footer-date">September 6 &amp; 7, 2026</p>
       <div class="footer-divider">✦ ✦ ✦</div>
-      <p class="footer-msg">Thank you for being a part of our beautiful journey.<br/>Your love and blessings mean the world to us.</p>
-      <p class="footer-copy">Made with ❤️ for a Celebration of Love</p>
+      <p class="footer-msg">Thank you for being a part of our beautiful journey.<br/>Your love and blessings means a lot.</p>
     </div>
   </footer>
 
